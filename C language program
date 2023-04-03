@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(void) {
+  int rnumber[10];
+  int n,sum;
+  printf("Enter the registration numbers that are provided : \n");
+    for(int i=0;i<10;i++){
+      printf("the %d registraion number is : ",i+1);
+  scanf("%d",&rnumber[i]);
+    }
+   printf("the registration number that gives the sum 9 are :\n");
+  for(int i=0;i<10;i++){
+    sum=0,n=0;
+    n=rnumber[i];
+  while(n>0){
+    sum+=n%10;
+    n=n/10;
+  }
+  if(sum==9)
+    printf("%d\n",rnumber[i]);
+    }
+  return 0;
+}
